@@ -1,0 +1,54 @@
+POST
+http://localhost:8080/api/v1/customers
+
+body:
+
+{
+    "name": "Bob",
+    "phone": "999 999-9999",
+    "address": "America, New York"
+}
+
+{
+    "name": "Alice",
+    "phone": "012 345-6789",
+    "address": "Ukraine, Odessa"
+}
+
+{
+    "name": "Tim",
+    "phone": "111 111-1111",
+    "address": "German, Berlin"
+}
+
+-----------------------------------------------
+
+GET
+http://localhost:8080/api/v1/customers
+
+GET
+http://localhost:8080/api/v1/customers/3
+
+GET
+http://localhost:8080/api/v1/customers/last-entity
+
+GET
+http://localhost:8080/api/v1/customers/query-by-name?name=Alice
+
+-----------------------------------------------
+
+PUT
+http://localhost:8080/api/v1/customers/3
+
+body:
+
+{
+    "name": "Nastya",
+    "phone": "111 111-1111",
+    "address": "UK, London"
+}
+
+-----------------------------------------------
+
+DELETE
+http://localhost:8080/api/v1/customers/3
